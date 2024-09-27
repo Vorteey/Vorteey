@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorteey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <button class="header-button">Gallery</button>
+            <button class="header-button">Instagram</button>
+        </div>
+        <h1>Vorteey</h1>
+    </div>
+    <div class="content">
+        <div class="vertical-rectangle">
+            <h2>Social</h2>
+            <a href="#" class="social-button" id="instagram">Instagram</a>
+            <a href="#" class="social-button" id="tiktok">TikTok</a>
+            <a href="#" class="social-button" id="youtube">YouTube</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.social-button').each(function(index) {
+                setTimeout(() => {
+                    $(this).addClass('visible');
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>
